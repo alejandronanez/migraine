@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import classNames from 'classnames';
-import { ListIconRecord } from '../../records/list-icon-record';
 import {
 	MEDICINE,
 	FOOD,
@@ -9,13 +8,9 @@ import {
 } from "../../constants/list-icon-constants";
 import './list-icon.css';
 
+const { string } = PropTypes;
+
 export const ListIcon = ({ icon }) => {
-	const iconName = ListIconRecord.includes(icon) ? icon : null;
-
-	if (!iconName) {
-		return <span />;
-	}
-
 	const cx = classNames('fa', {
 		'fa-medkit': icon === MEDICINE,
 		'fa-cutlery': icon === FOOD,
@@ -33,3 +28,9 @@ export const ListIcon = ({ icon }) => {
 		</div>
 	);
 }
+
+ListIcon.propTypes = {
+	icon: string.isRequired
+};
+
+ListIcon.displayName = 'ListIcon';

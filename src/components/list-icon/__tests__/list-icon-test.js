@@ -5,16 +5,6 @@ const shallowRender = renderComponent(ListIcon, {});
 
 describe('<ListIcon />', () => {
 
-	it('should return a <span /> if icon is empty', () => {
-		const tree = shallowRender({icon: ''});
-		expect(tree.find('.list-icon').length).toBeFalsy();
-	});
-
-	it('should return a <span /> if icon is not medicine, food, sport, migraine', () => {
-		const tree = shallowRender({icon: 'foo'});
-		expect(tree.find('.list-icon').length).toBeFalsy();
-	});
-
 	it('should return add .icon-alert if icon is migraine', () => {
 		const tree = shallowRender({icon: 'migraine'});
 		expect(tree.find('.icon-alert').length).toBeTruthy();
