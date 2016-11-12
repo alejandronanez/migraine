@@ -3,10 +3,10 @@
 	border-radius: 50%;
 	color: #fff;
 	display: inline-block;
-	height: 30px;
-	font-size: 20px;
+	height: 35px;
+	font-size: 1.5em;
 	text-align: center;
-	width: 30px;
+	width: 35px;
 }
 
 .list-icon.icon-alert {

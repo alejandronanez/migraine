@@ -7,12 +7,12 @@ describe('<ListIcon />', () => {
 
 	it('should return add .icon-alert if icon is migraine', () => {
 		const tree = shallowRender({icon: 'migraine'});
-		expect(tree.find('.icon-alert').length).toBeTruthy();
+		expect(tree.find('.icon-alert.list-icon').length).toBeTruthy();
 	});
 
 	it('should not return add .icon-alert if icon is not migraine', () => {
 		const tree = shallowRender({icon: 'food'});
-		expect(tree.find('.icon-alert').length).toBeFalsy();
+		expect(tree.find('.icon-alert.list-icon').length).toBeFalsy();
 	});
 
 	it('should return add .fa-medkit if icon is medicine', () => {

@@ -1,0 +1,21 @@
+.list-item {
+	border: 1px solid #DEDEDE;
+	padding: 5px;
+}
+
+p,
+.list-item-title {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.list-item .description {
+	align-items: center;
+	display: flex;
+	margin-top: 5px;
+}
+
+.list-item p {
+	font-size: 1.2em;
+	margin-left: 5px;
+}
