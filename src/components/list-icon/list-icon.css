@@ -1,0 +1,18 @@
+.list-icon {
+	background-color: #000;
+	border-radius: 50%;
+	color: #fff;
+	display: inline-block;
+	height: 30px;
+	font-size: 20px;
+	text-align: center;
+	width: 30px;
+}
+
+.list-icon.icon-alert {
+	background-color: #D22606
+}
+
+.list-icon .fa {
+	vertical-align: middle;
+}
